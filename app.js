@@ -8,7 +8,7 @@ function setColor(id)
 
 function removeColor(id)
 {
-    var color1 = " ";
+    var color1 = "";
     var element = document.getElementById(id);
     element.style.backgroundColor = color1;
 }
