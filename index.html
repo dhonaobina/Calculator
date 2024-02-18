@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | CodeGlimpse</title>
+    <link rel="stylesheet" src="styles/styles.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    
+    <h1>Calculator</h1>
+    <div class ="appbody">
+        <p id="txtinput">
+        </p>
+        <div id="callbutton">
+            <button id="num1" 
+                onmouseover="setColor(this.id);"
+                onmouseout="removeColor(this.id);"
+                onclick="displayValue(this.is);"
+                value="1">
+                1
+            </button>
+
+            <button id="num2" 
+                onmouseover="setColor(this.id);"
+                onmouseout="removeColor(this.id);"
+                onclick="displayValue(this.is);"
+                value="2">
+                2
+            </button>
+
+            <button id="num3" 
+                onmouseover="setColor(this.id);"
+                onmouseout="removeColor(this.id);"
+                onclick="displayValue(this.is);"
+                value="3">
+                3
+            </button>
+
+            <button id="add" 
+                onmouseover="setColor(this.id);"
+                onmouseout="removeColor(this.id);"
+                onclick="displayValue(this.is);"
+                value="+">
+                +
+            </button>
+
+            <button id="power" 
+                onmouseover="setColor(this.id);"
+                onmouseout="removeColor(this.id);"
+                onclick="displayValue(this.is);"
+                value="^">
+                ^
+            </button>
+
+        </div>
+
+
+    </div>
 </body>
 </html>
