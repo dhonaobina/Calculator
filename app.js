@@ -2,7 +2,6 @@ var val1;
 var val2;
 var resultval;
 var op;
-
 var color = "#ffff80";
 
 function setColor(id)
@@ -13,7 +12,7 @@ function setColor(id)
 
 function removeColor(id)
 {
-    var color1 = "";
+    var color1 = ""
     var element = document.getElementById(id);
     element.style.backgroundColor = color1;
 }
@@ -26,9 +25,9 @@ function displayValue(inputid)
 
 function displayInput(operation) 
 {
-    var1 = parseInt(document.getElementById("txtinput").innerHTML);
+    val1 = parseInt(document.getElementById("txtinput").innerHTML);
     op = operation;
-    document.getElementById("txtinpt").innerHTML = op;
+    document.getElementById("txtinput").innerHTML = op;
     document.getElementById("txtinput").innerHTML = "";
 }
 
@@ -62,9 +61,12 @@ function Calculate()
     return;
 }
 
+
 function clearBox()
 {
     document.getElementById("txtinput").innerHTML = "";
     return;
 }
+
+
 
