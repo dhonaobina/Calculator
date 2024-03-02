@@ -12,5 +12,9 @@
  - JavaScript
 
 ## Features Added:
-- Button with Event handler functions
+##### On the triggering Button with Event handler functions
+   -  The onmouseover event is triggered when the mouse is moved over the buttons and the first function is invoked.
+   -  The onmouseout event is triggered when the mouse is moved away from the buttons and the second function is invoked.
+   -  The onclick event is triggered when the buttons are clicked and the third user-defined function is invoked.
+   
   
