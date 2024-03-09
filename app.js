@@ -35,11 +35,11 @@ function displayInput(operation)
     document.getElementById("txtinput").innerHTML = op;
     document.getElementById("txtinput").innerHTML = "";
 }
+
 /*The Calculate() function will perform the mathematical operations such as addition, subtraction, multiplication, division, and modulus.*/
 function Calculate()
 {
-    val2 = parseInt(document.getElementById("txtinput").innerHTML);
-    document.getElementById("txtinput").innerHTML = "";
+    val2 = parseFloat(document.getElementById("txtinput").innerHTML);
     debugger;
     try
     {
@@ -63,12 +63,24 @@ function Calculate()
             }
             else
             {
-            document.getElementById("txtinput").innerHTML = val1 / val2;
+                document.getElementById("txtinput").innerHTML = val1 / val2;
             }
         }
         else if (op == "%")
         {
             document.getElementById("txtinput").innerHTML = val1 % val2;
+        }
+        else if (op == ^)
+        {
+            document.getElementById("txtinput").innerHTML = Math.pow(val1, val2);
+        }
+        else if (op == min)
+        {
+            document.getElementById("txtinput").innerHTML = Math.min(val1, val2);
+        }
+        else if (op == max)
+        {
+            document.getElementById("txtinput").innerHTML = Math.max(val1, val2);
         }
     }
     catch(e)
@@ -80,6 +92,7 @@ function Calculate()
     {
     document.getElementById("txtout").innerHTML = "Calculation Complete"
     }
+    return;
 }
 function spFunc(id)
 {
