@@ -58,14 +58,14 @@
 #### Used Built-in Math Object Methods
 - here are various built-in methods in the Math object that help to perform mathematical tasks in a script. Some of the commonly used Math object methods are as follows:
 
-### Math.abs(x) 
+##### Math.abs(x) 
 - This method returns the positive value of the parameter value.
-### Math.round(x) 
+##### Math.round(x) 
 - This method rounds off the parameter value to its nearest integer.
-### Math.ceil(x) 
+##### Math.ceil(x) 
 - This method rounds off the parameter value upwards to its nearest integer.
-### Math.random()
+##### Math.random()
 - This method generates random values that are less than 1 but greater than or equal to 0.
-### Math.floor(x) 
+##### Math.floor(x) 
 - This method rounds off the parameter value downwards to its nearest integer.
   
