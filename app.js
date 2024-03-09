@@ -1,9 +1,11 @@
 //Add background
 document.body.style.backgroundColor = "#ADD8E6";
 //Declare variables using the var keyword
-var val1;
-var val2;
-var resultval;
+var val1=0.0;
+var val2=0.0;
+var resultval=0.0;
+const piValue=3.14;
+document.getElementById("pi").value = piValue;
 var op;
 var color = "#ffff80";
 
@@ -79,8 +81,31 @@ function Calculate()
     document.getElementById("txtout").innerHTML = "Calculation Complete"
     }
 }
-
-
+function spFunc(id)
+{
+    val1 = parseFloat(document.getElementById("txtinput").innerHTML);
+    if (id == "rnd")
+    {
+        document.getElementById("txtinput").innerHTML = Math.round(val1);
+    }
+    else if (id == "flr")
+    {
+        document.getElementById("txtinput").innerHTML = Math.floor(val1);
+    }
+    else if (id == "cel")
+    {
+        document.getElementById("txtinput").innerHTML = Math.ceil(val1);
+    }
+    else if (id == "sqrt")
+    { 
+        document.getElementById("txtinput").innerHTML = Math.sqrt(val1);
+    }
+    document.getElementById("txtout").innerHTML = "Calculation complete!"
+}
+function rndNum() 
+{
+    document.getElementById("txtinput").innerHTML = Math.random();
+}
 function clearBox()
 {
     document.getElementById("txtinput").innerHTML = "";
