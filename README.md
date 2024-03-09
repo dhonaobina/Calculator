@@ -30,6 +30,30 @@
 
 - If there are errors in the program, during the debugging process at runtime, the compiler will stop the execution once encountering the debugger keyword. The compiler will not execute the next statement after the debugger keyword unless the error is fixed. You can open the debugger pane to identify the error.
 
+#### Handling Exceptions
+-  handling involves adding provisions to handle exceptional/abnormal conditions in a program. Such conditions, if not handled, forces the program to crash. You need to include exception-handling elements in the program to change the normal flow of program execution. A robust program will take care of all possible exceptions.
+
+- In JavaScript, it is quite common to have various types of errors in programs/scripts. You can handle such errors/exceptions using the try…catch block. The syntax of try…catch block is as follows:
+
+try
+{
+    <code block to be tested>
+}
+catch(error)
+{
+    <code block to handle errors>
+}
+
+- You can use the try statement to define a code block that needs to be tested for any specific errors in the program. You can use the catch statement to define a code block that needs to be executed if an error is identified in the try code block. The try…catch block must be included in a pair. In other words, the try statement is not valid without a catch statement and vice-versa.
+
+- You can also include a finally statement after the try…catch block in the script. The syntax of the finally statement is as follows:
+
+finally
+{
+    <code block to be executed irrespective of the exceptions>
+}
+
+- The finally block is executed regardless of the outcome of the try…catch block. It does not matter to the compiler if the exceptions are handled or not. The compiler will go ahead and always execute the finally statement block.
 
    
   
