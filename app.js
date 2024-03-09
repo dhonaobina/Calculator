@@ -1,3 +1,4 @@
+//Declare variables using the var keyword
 var val1;
 var val2;
 var resultval;
@@ -30,11 +31,13 @@ function displayInput(operation)
     document.getElementById("txtinput").innerHTML = op;
     document.getElementById("txtinput").innerHTML = "";
 }
-
+/*The Calculate() function will perform the mathematical operations such as addition, subtraction, multiplication, division, and modulus.*/
 function Calculate()
 {
     val2 = parseInt(document.getElementById("txtinput").innerHTML);
     document.getElementById("txtinput").innerHTML = "";
+    //If there are errors in the program, during the debugging process at runtime, the compiler will stop the execution once encountering the debugger keyword. The compiler will not execute the next statement after the debugger keyword unless the error is fixed. You can open the debugger pane to identify the error.
+    debugger;
     if (op == "*")
     {
         resultval = val1 * val2;
