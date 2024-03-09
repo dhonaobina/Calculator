@@ -11,9 +11,10 @@
  - CSS
  - JavaScript
 
-## Features Added:
-<<<<<<< HEAD
-- Button with Event handler 
+##### On the triggering Button with Event handler functions
+   -  The onmouseover event is triggered when the mouse is moved over the buttons and the first function is invoked.
+   -  The onmouseout event is triggered when the mouse is moved away from the buttons and the second function is invoked.
+   -  The onclick event is triggered when the buttons are clicked and the third user-defined function is invoked.
 
 ## Programming Best Practices:
 #### Comments Added
@@ -28,11 +29,7 @@
 #### Debugger Added 
     - a programming language help to decide the way you should name the variables and user-defined functions in a program. In JavaScript, a recommended way to name variables and user-defined functions is to use camelCase. In camelCase, two words are joined together and represented as a single word. The first alphabet of the word is in lowercase and the first alphabet of the second joined word is in uppercase. For example, if you declare a variable “resultvalue” in JavaScript, you need to use camelCase, and name it as “resultValue”.
     - If there are errors in the program, during the debugging process at runtime, the compiler will stop the execution once encountering the debugger keyword. The compiler will not execute the next statement after the debugger keyword unless the error is fixed. You can open the debugger pane to identify the error.
-=======
-##### On the triggering Button with Event handler functions
-   -  The onmouseover event is triggered when the mouse is moved over the buttons and the first function is invoked.
-   -  The onmouseout event is triggered when the mouse is moved away from the buttons and the second function is invoked.
-   -  The onclick event is triggered when the buttons are clicked and the third user-defined function is invoked.
+
+
    
->>>>>>> ddd9ab3f834c24f0420a93f7a87838ab3249106c
   
