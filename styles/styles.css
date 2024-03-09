@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     min-width: 26em;
     max-width: 26em;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -28,7 +28,27 @@ h1 {
     font-size: 18px;
     background-color: #fff;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 5px;
+}
+
+#errmsg {
+    text-align: center;
+    width: 23em;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #097C9B;
+    color: rgb(243, 240, 38);
+}
+
+#txtout {
+    text-align: center;
+    width: 23em;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #097C9B;
+    color:rgb(243, 240, 38);
 }
 
 #result {
@@ -47,3 +67,4 @@ button {
     border: 1px solid #097c9B;
     border-radius: 3px;
 }
+

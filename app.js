@@ -1,3 +1,5 @@
+//Add background
+document.body.style.backgroundColor = "#ADD8E6";
 //Declare variables using the var keyword
 var val1;
 var val2;
@@ -37,36 +39,53 @@ function Calculate()
     val2 = parseInt(document.getElementById("txtinput").innerHTML);
     document.getElementById("txtinput").innerHTML = "";
     debugger;
-    if (op == "*")
+    try
     {
-        resultval = val1 * val2;
+        if (op == "*")
+        {
+            document.getElementById("txtinput").innerHTML = val1 * val2;
+        }
+        else if (op == "+")
+        {
+            document.getElementById("txtinput").innerHTML = val1 + val2;
+        }
+        else if (op == "-")
+        {
+            document.getElementById("txtinput").innerHTML = val1 - val2;
+        }
+        else if (op == "/")
+        {
+            if (val2 == 0)
+            {
+                throw("Divide by zero error. You cannot divide any number by zero.");
+            }
+            else
+            {
+            document.getElementById("txtinput").innerHTML = val1 / val2;
+            }
+        }
+        else if (op == "%")
+        {
+            document.getElementById("txtinput").innerHTML = val1 % val2;
+        }
     }
-    if (op == "+")
+    catch(e)
     {
-        resultval = val1 + val2;
+        document.getElementById("errmsg").innerHTML = "ERROR!!" + e;
+        document.getElementById("txtinput").innerHTML = "";
     }
-    if (op == "-")
+    finally
     {
-        resultval = val1 - val2;
+    document.getElementById("txtout").innerHTML = "Calculation Complete"
     }
-    if (op == "/")
-    {
-        resultval = val1 / val2;
-    }
-    if (op == "%")
-    {
-        resultval = val1 % val2;
-    }
-    document.getElementById("txtinput").innerHTML = "";
-    document.getElementById("txtinput").innerHTML = resultval.toString();
-    document.getElementById("txtinput").innerHTML = val1 + op + val2 + " = " + resultval.toString();
-    return;
 }
 
 
 function clearBox()
 {
     document.getElementById("txtinput").innerHTML = "";
+    document.getElementById("txtout").innerHTML = "";
+    document.getElementById("errmsg").innerHTML = "";
     return;
 }
 
