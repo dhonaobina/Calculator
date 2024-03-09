@@ -70,15 +70,15 @@ function Calculate()
         {
             document.getElementById("txtinput").innerHTML = val1 % val2;
         }
-        else if (op == ^)
+        else if (op == "^")
         {
             document.getElementById("txtinput").innerHTML = Math.pow(val1, val2);
         }
-        else if (op == min)
+        else if (op == "min")
         {
             document.getElementById("txtinput").innerHTML = Math.min(val1, val2);
         }
-        else if (op == max)
+        else if (op == "max")
         {
             document.getElementById("txtinput").innerHTML = Math.max(val1, val2);
         }
@@ -90,7 +90,7 @@ function Calculate()
     }
     finally
     {
-    document.getElementById("txtout").innerHTML = "Calculation Complete"
+    document.getElementById("txtout").innerHTML = "Calculation Complete!"
     }
     return;
 }
