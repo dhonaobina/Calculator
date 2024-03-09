@@ -68,7 +68,7 @@ function Calculate()
         }
         else if (op == "%")
         {
-            document.getElementById("txtinput").innerHTML = val1 % val2;
+            resultval = val1 % val2;
         }
         else if (op == "^")
         {
