@@ -1,16 +1,16 @@
 body {
     background-color: #fff;
     margin: 0px auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ;
 }
 
 .appbody {
     background: #097C9B;
     border: 1px solid #ff0;
-    padding: 20px;
+    padding: 50px;
     margin: 0 auto;
-    min-width: 36em;
-    max-width: 36em;
+    min-width: 26em;
+    max-width: 26em;
     border-radius: 5px;
 }
 
